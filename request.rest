@@ -1,0 +1,74 @@
+GET http://localhost:5001/dosens
+
+
+###
+GET http://localhost:5001/dosens/3
+
+###
+POST http://localhost:5001/dosens
+Content-Type: application/json
+
+{
+    "name": "dwi shinta",
+    "nip": 12349829834
+}
+
+###
+PATCH  http://localhost:5001/dosens/5
+Content-Type: application/json
+
+{
+    "name": "dwi shinta udated",
+    "nip": 123456
+}
+
+###
+DELETE http://localhost:5001/dosens/3
+
+###
+GET http://localhost:5001/matakuliahs
+
+###
+GET http://localhost:5001/matakuliahs/6
+
+###
+POST http://localhost:5001/matakuliahs
+Content-Type: application/json
+
+{
+    "kode": "f123456",
+    "name": "sistem digital",
+    "dosenpj": "ryfial azhar",
+    "sks": 4.0,
+    "semester": 2
+
+
+}
+
+###
+PATCH  http://localhost:5001/matakuliahs/11
+Content-Type: application/json
+
+{
+    
+    "kode": "f123457",
+    "name": "sistem digital",
+    "dosenpj": "ryfial azhar updated",
+    "sks": 4.0,
+    "semester": 2
+}
+
+###
+DELETE http://localhost:5001/matakuliahs/1
+
+###
+POST http://localhost:5001/matakuliahs
+Content-Type: application/json
+
+{
+    "kode": "F12345",
+    "name": "Administrasi Perkantoran",
+    "dosenpj": "Dr. Swasa, M.Si",
+    "sks": 3,
+    "semester": 5
+}
